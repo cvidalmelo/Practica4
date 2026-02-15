@@ -10,16 +10,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Paso 1: Descargar el repositorio
+      
       - name: Checkout repositorio
         uses: actions/checkout@v4
 
-      # Paso 2: Ejecutar Hola Mundo
+      
       - name: Ejecutar programa
         run: |
           node index.js
 
-      # Paso 3: Enviar notificación a ntfy
+      
       - name: Enviar alerta a ntfy
         run: |
           curl -X POST https://ntfy.sh/devops-itla \
